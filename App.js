@@ -5,6 +5,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
+      <view style={styles.header}>
+          <text>hello</text>
+      </view>
       <Text>Palmeiras</Text>
       <StatusBar style="auto" />
     </View>
@@ -18,4 +21,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  header:{
+    height: 93,
+    backgroundColor: "#2C4877",
+  }
 });

@@ -5,9 +5,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <view style={styles.header}>
+      <View style={styles.header}>
           
-      </view>
+      </View>
       <Text>Palmeiras</Text>
       <StatusBar style="auto" />
     </View>

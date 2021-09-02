@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 const linksimportantes = ()=>{
     return(
          <View>
-            Oi
+            <Text> Oi</Text>
         </View>
     );
 };

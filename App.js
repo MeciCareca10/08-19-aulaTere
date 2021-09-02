@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
-const linkitem = ()=>{
+const linkitem = (name:String)=>{
     return(
-        <Text> BUBLE </Text>
+        <Text>{name}</Text>
     );
 };
 

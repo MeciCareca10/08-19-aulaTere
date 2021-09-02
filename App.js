@@ -6,18 +6,15 @@ import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
 const linkitem = (props:any)=>{
     return(
-        <Text style={{backgroundColor:"red", marginTop:10}}>{props.name}</Text>
+        <Text style={stylelinks}>{props.name}</Text>
     );
 };
+
 //{backgroundColor:"red", marginTop:10}
+
 const linksimportantes = ()=>{
     return(
-         <View>
-            <Text>Home</Text>
-            <Text>Post</Text>
-            <Text>Videos</Text>
-            <Text>Photos</Text>
-            <Text>Community</Text>
+         <View styles={stylelinks.container}>
             <linkitem name="Home"/>
             <linkitem name="Post"/>
             <linkitem name="Videos"/>
@@ -27,6 +24,14 @@ const linksimportantes = ()=>{
     );
 };
 
+const stylelinks = StyleSheet.create({
+    text:{
+        //backgroundColor:"red",
+        marginTop:10,
+        color: '4A4A4C',
+        fontSize: 13.71,
+    }
+});
 
 export default function App() {
   return (

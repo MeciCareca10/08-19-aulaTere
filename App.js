@@ -2,16 +2,27 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
-const linkitem = (name:String)=>{
+//const obj1 = {backgroundColor:"red", marginTop:10};
+
+const linkitem = (props:any)=>{
     return(
-        <Text>{name}</Text>
+        <Text style={{backgroundColor:"red", marginTop:10}}>{props.name}</Text>
     );
 };
-
+//{backgroundColor:"red", marginTop:10}
 const linksimportantes = ()=>{
     return(
          <View>
-            <Text> Oi</Text>
+            <Text>Home</Text>
+            <Text>Post</Text>
+            <Text>Videos</Text>
+            <Text>Photos</Text>
+            <Text>Community</Text>
+            <linkitem name="Home"/>
+            <linkitem name="Post"/>
+            <linkitem name="Videos"/>
+            <linkitem name="Photos"/>
+            <linkitem name="Community"/>
         </View>
     );
 };

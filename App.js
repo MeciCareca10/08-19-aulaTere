@@ -21,8 +21,6 @@ export default function App() {
                     placeholder="Search"
                     placeholderTextColor="#F5FFFF"
                     >
-                    
-
                 </TextInput>
             </View>
             <Image source={

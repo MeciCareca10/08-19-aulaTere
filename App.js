@@ -2,34 +2,41 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
-//const obj1 = {backgroundColor:"red", marginTop:10};
-
-const linkitem = (props:any)=>{
+const LinkItem = (props:any)=>{
     return(
-        <Text style={stylelinks}>{props.name}</Text>
+        <Text style={stylesLink.text}>{props.name}</Text>
     );
-};
+}
 
-//{backgroundColor:"red", marginTop:10}
-
-const linksimportantes = ()=>{
-    return(
-         <View styles={stylelinks.container}>
-            <linkitem name="Home"/>
-            <linkitem name="Post"/>
-            <linkitem name="Videos"/>
-            <linkitem name="Photos"/>
-            <linkitem name="Community"/>
-        </View>
-    );
-};
-
-const stylelinks = StyleSheet.create({
+const stylesLink = StyleSheet.create({
     text:{
         //backgroundColor:"red",
         marginTop:10,
-        color: '4A4A4C',
+        color: '#4A4A4C',
         fontSize: 13.71,
+
+    }
+});
+
+const LinksImportantes = ()=>{
+    return(//Aqui dentro ficará o nosso JSX
+        <View style={stylesLinkImportantes.container}>
+            <LinkItem name="Home"/>
+            <LinkItem name="Post"/>
+            <LinkItem name="Videos"/>
+            <LinkItem name="Photos"/>
+            <LinkItem name="Community"/>
+        </View>
+    );
+};
+const stylesLinkImportantes = StyleSheet.create({
+    container:{
+        flex:1,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        paddingHorizontal:40,
+        paddingVertical:10,
+        background: "#FFFFFF",
     }
 });
 

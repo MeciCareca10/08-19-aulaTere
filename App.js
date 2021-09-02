@@ -37,6 +37,7 @@ const stylesLinkImportantes = StyleSheet.create({
         paddingHorizontal:40,
         paddingVertical:10,
         background: "#FFFFFF",
+        
     }
 });
 

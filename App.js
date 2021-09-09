@@ -36,7 +36,8 @@ const stylesLinkImportantes = StyleSheet.create({
         justifyContent: "space-between",
         paddingHorizontal:40,
         paddingVertical:10,
-        backgroundColor: "#FFFFFF",
+        borderBottomColor: "#F0F0F0",
+        borderBottomWidth: 1,
         
     }
 });

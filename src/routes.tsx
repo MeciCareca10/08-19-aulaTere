@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Home from './Pages/Home';
-import login from './Pages/Login';
+import Login from './Pages/Login';
 
 const Stack = createNativeStackNavigator();
 
-const routes =() =>{
+const Routes =() =>{
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Login"
+            <Stack.Navigator initialRouteName="Home"
                 screenOptions={{
-                    headerShown: false
+                    headerShown:false,
                 }}
             >
                 <Stack.Screen name="Home" component={Home}/>
-                <Stack.Screen name="Login" component={login}/>
+                <Stack.Screen name="Login" component={Login}/>
             </Stack.Navigator>
         </NavigationContainer>
-    )
+    );
 }
 
-export default routes;
+export default Routes;

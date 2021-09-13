@@ -1,9 +1,7 @@
 import React from 'react';
+import { View, Text } from 'react-native';
 
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-
-const login = () =>{
+const Login = () => {
     return(
         <View>
             <Text>Login</Text>
@@ -11,4 +9,4 @@ const login = () =>{
     );
 }
 
-export default login;
+export default Login;

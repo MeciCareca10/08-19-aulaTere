@@ -1,5 +1,7 @@
-import React from "react";
-import {View, Text} from "react-native";
+import React from 'react';
+
+import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 const login = () =>{
     return(

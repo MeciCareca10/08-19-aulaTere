@@ -6,8 +6,14 @@ import routes from './src/routes'
 
 export default function App() {
     return (
-       <View style={{flex:1}}>
-           <Home/>
+       <View style={styles.container}>
+           <routes/>
         </View> 
     );
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+    }
+});

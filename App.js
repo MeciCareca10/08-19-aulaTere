@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, StyleSheet, Routes } from 'react-native';
+import {Text, View, StyleSheet } from 'react-native';
 
-import  Routes from '../08-19-aulaTere/src/Routes'
+import  Routes from './src/Routes'
+
 
 export default function App() {
     return (

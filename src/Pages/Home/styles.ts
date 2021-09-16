@@ -1,7 +1,6 @@
-import React from 'react';
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
- export const stylesLink = StyleSheet.create({
+export const stylesLink = StyleSheet.create({
     text:{
         //backgroundColor:"red",
         marginTop:10,
@@ -10,6 +9,7 @@ import { StyleSheet } from 'react-native';
 
     }
 });
+
 export const stylesLinkImportantes = StyleSheet.create({
     container:{
         flexDirection: "row",
@@ -22,6 +22,7 @@ export const stylesLinkImportantes = StyleSheet.create({
 
     }
 });
+
 export const styles = StyleSheet.create({
     container: {
         flex:1,
@@ -48,5 +49,23 @@ export const styles = StyleSheet.create({
         // maxWidth:200
         flex:1,
         paddingRight:10,
+    },
+    meubotao:{
+        backgroundColor:"#4369B0",
+        height:40,
+        alignItems:"center",
+        justifyContent:'center',
+        marginHorizontal:40,
+        borderRadius:10,
+
+    },
+    conteudoFacebook:{
+        flex:1,
+        // backgroundColor:"#F0F500",
+        justifyContent:'flex-end',
+        paddingVertical:40,
+    },
+    meubotaoTexto:{
+        color:"#F5FFFF",
     },
 });

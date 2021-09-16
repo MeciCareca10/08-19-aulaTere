@@ -1,17 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import {Text, View, Image, TextInput,TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import {stylesLink,stylesLinkImportantes,styles} from './styles';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import { StackNavigatorParamList } from '../../../types';
 
-import {stylesLink} from './styles'
-import {stylesLinkImportantes} from './styles'
-import {styles} from './styles'
 
 const LinkItem = (props:any)=>{
     return(
         <Text style={stylesLink.text}>{props.name}</Text>
     );
 }
-
 const LinksImportantes = ()=>{
     return(//Aqui dentro ficará o nosso JSX
         <View style={stylesLinkImportantes.container}>
@@ -22,9 +22,17 @@ const LinksImportantes = ()=>{
             <LinkItem name="Community"/>
         </View>
     );
-}; 
+};
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList,"Login">;
 
 const Home = () => {
+
+    const navigation = useNavigation<HomeProps>();
+
+    function irParaTelaLogin(){
+        navigation.navigate('Login');
+    }
+
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -52,6 +60,11 @@ const Home = () => {
             </View>
             <LinksImportantes />
             <StatusBar style="auto"  />
+            <View style={styles.conteudoFacebook}>
+                <TouchableOpacity style={styles.meubotao} onPress={irParaTelaLogin}>
+                    <Text style={styles.meubotaoTexto}>Ir para segunda tela</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     );
 }

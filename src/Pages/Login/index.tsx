@@ -1,9 +1,18 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TextInput } from 'react-native';
-
+import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import {styles} from './styles'
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import { StackNavigatorParamList } from '../../../types';
+
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList,"Login">;
 
 const Login = () => {
+    const navigation = useNavigation<HomeProps>();
+
+    function irparatelahome(){
+        navigation.navigate('Home');
+    }
     return(
         <View style={styles.container}>
             <View style={styles.facebook}>
@@ -27,13 +36,12 @@ const Login = () => {
                 >
             </TextInput>      
             </View>
-            <TextInput
-                placeholder="Log In"
-                placeholderTextColor="#FFFFFF"
-                style={styles.Login}
-                >
-            </TextInput>    
-            <Text style={styles.upfor}>Sign Up for FaceBook</Text>        
+            <View>
+                <TouchableOpacity style={styles.meubotao} onPress={irparatelahome}>
+                    <Text style={styles.meubotaoTexto}>Ir para segunda tela</Text>
+                </TouchableOpacity>   
+            <Text style={styles.upfor}>Sign Up for FaceBook</Text>      
+        </View>
         </View>
     );
 }

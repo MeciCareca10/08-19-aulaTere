@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         marginTop: 370,
     },
-    Login:{
+    meubotao:{
         backgroundColor:"#213873",
         width: 320,
         height: 42,
@@ -61,6 +61,10 @@ export const styles = StyleSheet.create({
         fontStyle: 'normal',
         fontWeight: "bold",
         fontSize: 25,
+        borderRadius:10,
+    },
+    meubotaoTexto:{
+
     },
     upfor:{
         marginTop: 670,

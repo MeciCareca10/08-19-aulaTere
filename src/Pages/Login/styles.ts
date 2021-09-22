@@ -64,7 +64,12 @@ export const styles = StyleSheet.create({
         borderRadius:10,
     },
     meubotaoTexto:{
-
+        color:"#F5FFFF",
+        textAlign: 'center',
+        fontFamily: 'Roboto',
+        fontStyle: 'normal',
+        fontWeight: "bold",
+        fontSize: 25,
     },
     upfor:{
         marginTop: 670,

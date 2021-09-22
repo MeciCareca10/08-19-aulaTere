@@ -38,7 +38,7 @@ const Login = () => {
             </View>
             <View>
                 <TouchableOpacity style={styles.meubotao} onPress={irparatelahome}>
-                    <Text style={styles.meubotaoTexto}>Ir para segunda tela</Text>
+                    <Text style={styles.meubotaoTexto}>Log In</Text>
                 </TouchableOpacity>   
             <Text style={styles.upfor}>Sign Up for FaceBook</Text>      
         </View>

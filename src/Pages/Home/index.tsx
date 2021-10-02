@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View, Image, TextInput,TouchableOpacity } from 'react-native';
+import {Text, View, Image, TextInput,TouchableOpacity, ScrollView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import {stylesLink,stylesLinkImportantes,styles} from './styles';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import { StackNavigatorParamList } from '../../../types';
-
+import Post from '../Post';
 
 const LinkItem = (props:any)=>{
     return(
@@ -23,7 +23,7 @@ const LinksImportantes = ()=>{
         </View>
     );
 };
-type HomeProps = NativeStackNavigationProp<StackNavigatorParamList,"Login">;
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList,"Home">;
 
 const Home = () => {
 
@@ -65,6 +65,10 @@ const Home = () => {
                     <Text style={styles.meubotaoTexto}>Ir para segunda tela</Text>
                 </TouchableOpacity>
             </View>
+
+            <ScrollView>
+                <Post />
+            </ScrollView>
         </View>
     );
 }

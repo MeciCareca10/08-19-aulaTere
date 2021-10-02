@@ -63,7 +63,6 @@ const Post = ()=>{
         </View>
     );
 }
-export default Post;
 
 const styles = StyleSheet.create({
     container:{
@@ -167,3 +166,4 @@ const styles = StyleSheet.create({
     },
 
 });
+export default Post;
